@@ -13,7 +13,7 @@ def roll(*, die: int = 20, number: int = 1) -> np.ndarray:
     Returns:
         np.ndarray: array of roll results
     """
-    return np.random.randint(1, die, size=number)
+    return np.random.randint(1, die + 1, size=number)
 
 
 def make_checks(*, dc: int, modifier: int = 0, number: int = 1) -> np.ndarray:
